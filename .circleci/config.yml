@@ -10,7 +10,7 @@ jobs:
           name: Install dependencies and build project
           command: |
             echo $(circleci tests glob "foo/**/*" "bar/**/*")
-            cirlceci tests glob "foo/**/*" "bar/**/*" | xargs -n 1 echo
+            circleci tests glob "foo/**/*" "bar/**/*" | xargs -n 1 echo
       - sonarcloud/scan
 
 orbs:
